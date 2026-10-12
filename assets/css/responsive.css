@@ -204,3 +204,7 @@ body :is(.scale-nav,.software-scale-nav,.standard-section-nav) :is(.research-cat
  body .menu-toggle{padding:0 .65rem;gap:.4rem}
  body .nav{gap:.5rem}
 }
+@media(max-width:380px){
+ body .brand span:last-child{display:none}
+ body .nav{min-height:56px}
+}

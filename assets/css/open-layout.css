@@ -126,3 +126,11 @@ body.research-page section.research-chapter>.research-tools-tabs{border-top:0!im
 
 /* Label the paper list the same way as the skills lists. */
 body.research-page section.research-chapter .research-topics-panel::before{content:"Research and publications";display:block;margin:0 0 .6rem;font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#3f7653}
+
+/* Small phones: text-only tabs, and no name in the header, to save screen height. */
+@media(max-width:380px){
+ body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav) :is(.research-category-icon,.section-nav-icon){display:none!important}
+ body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav)>a,
+ body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav).is-compact-section-nav>a{min-height:40px!important;justify-content:center;padding:.4rem .1rem!important}
+ body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav)>a :is(strong,.tab-label-short,.tab-label-phone,span:not(.research-category-icon):not(.section-nav-icon)){font-size:.8125rem!important}
+}
