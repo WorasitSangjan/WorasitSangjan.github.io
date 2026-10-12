@@ -1,0 +1,55 @@
+/* Experience and Contact share the Research page's reading rhythm. */
+.standard-page { font-size:1rem; line-height:1.5; }
+.standard-page .detail-section { padding-top:2rem; }
+.standard-page .section-head { display:block; margin-bottom:1.25rem; padding-bottom:1rem; border-bottom:1px solid #dce4dc; }
+.standard-page .section-head h1 { margin:.35rem 0 .75rem; }
+.standard-page .section-head>p { font-size:1rem; line-height:1.5; margin:.5rem 0 0; max-width:75ch; }
+.standard-section-nav { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); background:#f8f7f1; border:1px solid #dce4dc; margin:0 0 1.5rem; }
+.standard-section-nav a { padding:1rem; color:#243c32; font-weight:600; text-decoration:none; border-right:1px solid #dce4dc; }
+.standard-section-nav a:last-child { border-right:0; }
+.standard-section-nav a:hover { background:#e8f1e7; }
+.standard-sections { display:grid; gap:1.5rem; }
+.standard-page .standard-panel { background:#f8f7f1; border:1px solid #dce4dc; border-top:2px solid #3f7653; border-radius:0; padding:1.5rem; margin:0; scroll-margin-top:6rem; }
+.standard-page .standard-panel h2 { font-family:var(--font-ui); font-size:clamp(1.75rem,2.5vw,2.25rem); font-weight:600; line-height:1.15; letter-spacing:-.025em; margin:0 0 1rem; }
+.standard-page .standard-panel h3 { font-size:1rem; font-weight:600; line-height:1.4; letter-spacing:0; margin:0 0 .3rem; }
+.standard-page .timeline-item { grid-template-columns:8rem minmax(0,1fr); gap:1.25rem; padding:1rem 0; }
+.standard-page .timeline-item p { font-size:.9375rem; line-height:1.5; max-width:75ch; margin:.3rem 0 0; color:#5c6d63; }
+.standard-page .timeline-date { font-size:.875rem; color:#3f7653; }
+.standard-page .industry-note { font-size:.9375rem; max-width:75ch; margin:1rem 0 0; }
+.standard-page .education-item { padding:.85rem 0; border-bottom:1px solid #dce4dc; }
+.standard-page .education-item b { font-size:1rem; font-weight:600; }
+.standard-page .education-item span,.standard-page .education-item p { font-size:.9375rem; line-height:1.5; color:#5c6d63; margin:.3rem 0 0; }
+.standard-page .education-panel .primary-button { margin-top:1rem; }
+.standard-page .recognition-feature { display:grid; grid-template-columns:minmax(0,1fr) 15rem; align-items:start; gap:1.5rem; }
+.standard-page .recognition-feature figure { grid-column:2; grid-row:1; margin:0; }
+.standard-page .recognition-feature img { width:100%; height:auto; min-height:0; object-fit:contain; }
+.standard-page .recognition-copy { grid-column:1; grid-row:1; padding:0; }
+.standard-page .recognition-copy p,.standard-page .recognition-feature figcaption { font-size:.875rem; color:#5c6d63; }
+.standard-page .contact-details .email-link { font-size:clamp(1rem,2vw,1.4rem); overflow-wrap:anywhere; }
+.standard-page .contact-details .resource-links { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0 0; }
+.standard-page .resource-links a { font-size:.875rem; padding:.5rem .75rem; border:1px solid #b8cbbb; background:#fff; border-radius:0; }
+.standard-page a:focus-visible { outline:2px solid #3f7653; outline-offset:3px; }
+@media(max-width:600px) { .standard-page .detail-section { padding-top:1.25rem; } .standard-page .standard-panel { padding:1.1rem; } .standard-page .timeline-item { grid-template-columns:1fr; gap:.3rem; } .standard-section-nav a { padding:.75rem; font-size:.875rem; } .standard-page .recognition-feature { grid-template-columns:1fr; gap:1rem; } .standard-page .recognition-feature figure { grid-column:1; grid-row:2; max-width:15rem; } }
+
+.standard-section-nav { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.standard-page .journey-panel figure { margin:0; }
+.standard-page .journey-panel img { display:block; width:100%; height:auto; }
+.standard-page .recognition-text .recognition-copy { padding:0; }
+.award-slide .photo-frame img { object-fit:contain; background:#f8f7f1; }
+@media(max-width:600px) { .standard-section-nav { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+.experience-page .standard-section-nav { grid-template-columns:repeat(3,minmax(0,1fr)); }
+
+.experience-page .cv-download-row { display:flex; justify-content:flex-start; margin-top:-.5rem; }
+
+.section-nav-icon { display:flex; align-items:center; gap:.4rem; color:#3f7653; margin-bottom:.6rem; }
+.section-nav-icon svg { display:block; width:32px; height:32px; flex:0 0 32px; }
+
+.industry-experience-preview{max-width:48rem;margin:1rem 0 0}.industry-experience-preview>a{display:block;padding:.25rem;border:1px solid #b8cbbb;background:#fff}.industry-experience-preview img{display:block;width:100%;height:auto}.industry-experience-preview figcaption{display:flex;flex-wrap:wrap;gap:.35rem 1rem;margin-top:.5rem;font-size:.875rem;color:#5c6d63}.industry-experience-preview figcaption a{color:#28533b;font-weight:600;text-underline-offset:.2em}
+
+.contact-page .contact-profile-links{display:flex;flex-wrap:wrap;gap:.65rem 1.25rem;margin-top:1.25rem}.contact-page .contact-profile-links a{display:inline-flex;align-items:center;gap:.45rem;padding:.35rem 0;border:0;background:transparent;color:#28533b;font-weight:600;text-decoration:underline;text-underline-offset:.2em}.contact-profile-links svg{width:20px;height:20px;flex-shrink:0}.contact-page .contact-profile-links a:hover{background:transparent;color:#3f7653}
+
+.standard-page .contact-intro .contact-location{display:flex;align-items:center;gap:.55rem;width:fit-content;margin:1.25rem 0 0;padding-top:.8rem;border-top:1px solid #dce4dc;color:#28533b;font-size:.9375rem;font-weight:600}.contact-location svg{width:20px;height:20px;flex-shrink:0}.standard-page .contact-page .cv-download-row{margin-top:2rem}
+
+body.contact-page .contact-intro>p:not(.contact-location){max-width:none;width:auto;text-wrap:wrap}.contact-page .contact-topics{margin:.8rem 0 0;padding-left:1.25rem;max-width:none;font-size:1rem;line-height:1.55;color:#5c6d63}.contact-page .contact-topics li{margin:.25rem 0}.contact-page .contact-topics li::marker{color:#3f7653}
+

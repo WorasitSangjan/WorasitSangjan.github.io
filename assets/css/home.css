@@ -1,0 +1,66 @@
+.home-page .hero{min-height:0;padding:2rem 0 1.25rem}.home-page #research.home-section{background:#fff;padding-top:1.5rem}.home-page #research .section-head{border-top:1px solid var(--line);padding-top:1.5rem;margin-bottom:1.5rem;align-items:start}.research-jump{display:inline-flex;align-items:center;gap:.65rem;margin-top:1.25rem;padding:.65rem 0;color:#f4f8f5;font-weight:700;text-decoration:underline;text-underline-offset:.3em}.research-jump svg{flex-shrink:0}.research-jump:hover{color:#a9cfb4}.research-jump:focus-visible{outline:2px solid #f4f8f5;outline-offset:4px}@media(max-width:760px){.home-page .hero{padding:1.5rem 0 1rem}.home-page #research.home-section{padding-top:1rem}.home-page #research .section-head>p{margin-top:.75rem}}
+.home-page .hero .home-location{display:flex;align-items:center;gap:.5rem;margin:.5rem 0 1.25rem;color:#c8ded1;font-size:.9375rem;font-weight:600;line-height:1.5}.home-location svg{width:1.2rem;height:1.2rem;flex:0 0 1.2rem}
+/* Keep the affiliation and location together as one compact group. */
+.home-page .hero .affiliation{margin-bottom:0}
+.home-page .hero .affiliation+.home-location{margin-top:0}
+
+.home-page .hero .profile-detail{display:flex;align-items:flex-start;gap:.5rem;line-height:1.5}.home-page .hero .profile-detail svg{width:1.2rem;height:1.2rem;flex:0 0 1.2rem;margin-top:.15em}.home-page .hero .home-location{font-weight:400;font-size:1rem;color:#c8ded1}.home-page .hero .profile-detail span{min-width:0}
+/* Keep the five tool names together at desktop widths. */
+.home-page .hero .tool-names{column-gap:.5rem;row-gap:.4rem}
+.home-page .hero .tool-names .tool-name{font-size:.9375rem;white-space:nowrap}
+@media(min-width:1100px){.home-page .hero .tool-names{flex-wrap:nowrap}}
+
+.home-page .hero .profile-name{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15em;font-size:clamp(2.25rem,3.35vw,3rem);line-height:1.15}.profile-name .name-text{white-space:nowrap}.home-page .hero .profile-name .degree{margin-left:0}@media(max-width:380px){.home-page .hero .profile-name{font-size:2rem}}
+/* A little more horizontal room for the opening section on larger screens. */
+@media(min-width:1100px){.home-page .hero-grid{width:min(1560px,calc(100% - 5rem));gap:clamp(2.5rem,3.5vw,4.5rem)}}
+/* Full-screen opening with a smaller slideshow and calmer vertical spacing. */
+@media(min-width:761px){
+ .home-page .hero{min-height:calc(100svh - 75px);box-sizing:border-box;display:flex;align-items:center;padding:2.5rem 0}
+ .home-page .hero-grid{align-items:center;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:3rem;width:min(1440px,calc(100% - 5rem))}
+ .home-page .field-portrait{width:100%;max-width:32rem;justify-self:end}
+ .home-page .photo-frame{height:clamp(320px,48svh,440px)}
+ .home-page .hero .profile-name{margin:.75rem 0 1.5rem}
+ .home-page .hero .lead{margin:1.75rem 0 1rem}
+ .home-page .hero .bio>p:not(.eyebrow):not(.profile-title):not(.affiliation):not(.home-location):not(.lead){line-height:1.75}
+ .home-page .platform-strip{margin:1.75rem 0}
+ .home-page .hero .built-inline{margin-top:1.5rem;padding-top:1.25rem}
+ .home-page .research-jump{margin-top:1.5rem}
+}
+/* Align the slideshow with the name and give it a little more presence. */
+@media(min-width:761px){
+ .home-page .hero-grid{align-items:start}
+ .home-page .field-portrait{max-width:36rem;margin-top:3.5rem}
+ .home-page .photo-frame{height:clamp(360px,52svh,480px)}
+}
+/* Clearer vertical separation between the opening content groups. */
+@media(min-width:761px){
+ .home-page .hero .profile-name{margin-bottom:1.75rem}
+ .home-page .hero .lead{margin-top:2.25rem;margin-bottom:1.4rem}
+ .home-page .platform-strip{margin:2.25rem 0}
+ .home-page .hero .built-inline{margin-top:1.75rem;padding-top:1.5rem}
+ .home-page .hero .tool-names{margin-top:1rem}
+ .home-page .research-jump{margin-top:2rem}
+}
+@media(max-width:760px){.home-page .platform-strip{margin:1.75rem 0}.home-page .hero .built-inline{margin-top:1.5rem;padding-top:1.25rem}.home-page .research-jump{margin-top:1.5rem}}
+/* One continuous dark-green home surface with light research cards. */
+.home-page #research.home-section{background:#123743;color:#f4f8f5;border-bottom-color:#355864;padding-bottom:3rem}
+.home-page .hero{border-bottom:0}
+.home-page #research .section-head{border-top-color:#355864}
+.home-page #research .section-head h2{color:#f4f8f5}
+.home-page #research .section-head>p,.home-page #research .scale-endpoints{color:#c8ded1}
+.home-page #research .observation-scale li{color:#c8ded1}
+.home-page #research .scale-node{background:#123743;color:#a9cfb4}
+.home-page #research .observation-scale::before{background:#6a9182}
+.home-page #research>.wrap>.text-link{color:#f4f8f5;text-underline-offset:.2em}
+.home-page #research>.wrap>.text-link:hover{color:#a9cfb4}
+.home-page #research>.wrap>.text-link:focus-visible{outline-color:#a9cfb4}
+
+/* A light footer separates the page ending from the dark Home content. */
+body.home-page footer{background:#fff;color:#28533b;border-top:1px solid #dce5dc}
+
+/* Keep the intro copy clear of the photo and drop the rule above Research at a Glance. */
+@media(min-width:1100px){.home-page .hero .bio>p:not(.eyebrow):not(.profile-title):not(.affiliation):not(.home-location):not(.lead){max-width:34rem}}
+.home-page #research .section-head{border-top:0;padding-top:0}
+@media(min-width:1100px){.home-page .hero .platform-strip{max-width:34rem}}
+@media(min-width:1100px){.home-page .hero .platform-strip{grid-template-columns:repeat(6,auto);justify-content:space-between}.home-page .hero .platform-strip .platform-item span{white-space:nowrap}}
+@media(min-width:1100px){.home-page .hero .platform-strip{grid-template-columns:repeat(6,minmax(0,1fr));justify-content:stretch}.home-page .hero .platform-strip .platform-item span{white-space:normal;text-align:center;line-height:1.3}}

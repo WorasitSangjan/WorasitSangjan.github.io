@@ -1,0 +1,50 @@
+/* Shared final visual roles, applied consistently across all five pages. */
+:root{--surface-page:#fff;--surface-panel:#f8f7f1;--surface-active:#e8f1e7;--tone-ink:#243c32;--tone-muted:#5c6d63;--tone-link:#28533b;--tone-accent:#3f7653;--tone-line:#dce4dc;--type-section:clamp(1.75rem,2.5vw,2.25rem)}
+body{background:var(--surface-page);color:var(--tone-ink)}
+body.detail-page-body main,body.detail-page-body .detail-section{background:var(--surface-page)}
+body .section-head h1,body .software-intro h1{font-size:var(--type-page);font-weight:600;line-height:1.12;letter-spacing:-.025em}
+body .section-head>p,body .software-intro>p{font-size:1rem;line-height:1.55;color:var(--tone-muted)}
+body .research-chapter,body .software-chapter,body .standard-panel{background:var(--surface-panel);border-color:var(--tone-line);border-top-color:var(--tone-accent)}
+body.research-page .research-chapter h2,body.software-page .software-chapter h2,body.standard-page .standard-panel h2,body .end-page-links h2{font-size:var(--type-section);font-weight:600;line-height:1.2;letter-spacing:-.025em;color:var(--tone-ink)}
+body.research-page .research-chapter h3,body.software-page .software-tool-list h3,body.standard-page .standard-panel h3,.leafct-program-row h4{font-size:1rem;font-weight:600;line-height:1.4;letter-spacing:0;color:var(--tone-ink)}
+body .research-scale-label,body .software-scale-label{color:var(--tone-accent);font-size:.875rem;font-weight:600;line-height:1.4}
+body.software-page .archive-meta,.leafct-program-detail>p,.leafct-use-options dd{font-size:.9375rem;line-height:1.55;color:var(--tone-muted)}
+body.research-page .publication-meta,body.research-page .paper-thumbnail span,body.software-page figcaption,body.standard-page figcaption{color:var(--tone-muted);font-size:.875rem;line-height:1.45}
+body.software-page .resource-links a,body.software-page #leafct a:not(:has(img)),body .end-page-links a,body .contact-profile-links a{font-size:.9375rem;line-height:1.5;font-weight:600;color:var(--tone-link);text-underline-offset:.2em;text-decoration-thickness:1px}
+body .end-page-links a{font-size:1rem}
+body.research-page .cross-platform-section .methods-band h3{font-size:var(--type-section);line-height:1.2;font-weight:600;letter-spacing:-.025em}
+body.research-page .cross-platform-section .methods-band p{color:var(--tone-muted);line-height:1.55}
+body.standard-page .contact-location{color:var(--tone-link);font-weight:600}
+body.experience-page .cv-download-row{margin-top:1.5rem}
+body .software-tool-preview>a,body .software-app-preview>a{border-color:var(--tone-line)}
+body a:focus-visible,body button:focus-visible{outline:2px solid var(--tone-accent);outline-offset:3px}
+::selection{background:#cce0d0;color:#243c32}
+body .hero ::selection{background:#c8ded1;color:#123743}
+@media(max-width:760px){body .research-chapter,body .software-chapter,body .standard-panel{padding:1.1rem}body .section-head h1,body .software-intro h1{overflow-wrap:break-word}}
+body.research-page .publication-profiles h2{font-size:var(--type-section);font-weight:600;line-height:1.2;letter-spacing:-.025em}
+@media(max-width:760px){body .footer-row>span{margin-bottom:.6rem}body .footer-row>span span{display:inline}}
+/* Narrative text uses its parent layout width and wraps naturally. */
+body .section-head>p,body .software-intro>p,body .bio>p,body .highlight-card p,
+body.research-page .research-chapter .research-modern-heading>p:last-child,
+body.research-page .research-current-work,body.research-page .cross-platform-section .methods-band p,
+body.software-page .software-tool-list .archive-meta,body .leafct-program-detail>p,
+body .leafct-use-options,body .leafct-run-options,body .leafct-resource p,body .leafct-training p,
+body.standard-page .timeline-item p,body.standard-page .industry-note,
+body.software-page .software-tool-purpose{max-width:none;width:auto;text-wrap:wrap}
+body.research-page #xct .research-modern-heading{max-width:none}
+/* Consistent type and image roles across the complete site. */
+:root{--type-detail:.9375rem;--type-caption:.875rem;--preview-height:20rem;--preview-pair-width:52rem;--thumbnail-height:5.5rem}
+body,button,input,select,textarea{font-family:var(--font-ui)}
+body.home-page .home-section .section-head h2{font-size:var(--type-section);line-height:1.2;font-weight:600;letter-spacing:-.025em}
+body.home-page .highlight-card h3{font-size:1rem;line-height:1.4;letter-spacing:0;font-weight:600}
+body.home-page .highlight-card p,body.standard-page .timeline-item p,body.standard-page .education-item p,body.standard-page .industry-note,body.software-page .archive-meta,body .leafct-program-detail>p,body .leafct-use-options dd{font-size:var(--type-detail);line-height:1.55;color:var(--tone-muted)}
+body.standard-page .timeline-date,body.standard-page .education-item span,body .photo-slide figcaption,body.software-page figcaption,body.standard-page figcaption{font-size:var(--type-caption);line-height:1.45}
+body.research-page .research-topic-heading,body.research-page .cross-platform-section>h3{font-size:1rem;line-height:1.4;letter-spacing:0;font-weight:600;color:var(--tone-ink)}
+body .photo-slide figcaption>span:first-child,body .software-tool-purpose{color:var(--tone-link)}
+body.research-page .paper-thumbnail img{height:var(--thumbnail-height);max-height:var(--thumbnail-height);width:100%;object-fit:contain;object-position:left top}
+body.software-page .software-preview-pair,body.software-page #agicam .software-preview-pair,body.software-page .matchplant-preview-pair,body.software-page .leafct-unified-previews{max-width:var(--preview-pair-width);gap:1.25rem}
+body.software-page .software-preview-pair figure>a,body.software-page #agicam .software-preview-pair figure>a,body.software-page .matchplant-preview-pair figure>a,body.software-page .leafct-unified-previews figure>a{display:flex;align-items:center;justify-content:center;width:100%;height:var(--preview-height);padding:.25rem;box-sizing:border-box;border:1px solid var(--tone-line);background:var(--surface-panel)}
+body.software-page .software-preview-pair img,body.software-page #agicam .software-preview-pair img,body.software-page .matchplant-preview-pair img,body.software-page .leafct-unified-previews img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center}
+body.home-page .highlight-card[href$="#satellite"] img{object-fit:contain}
+body.standard-page .journey-panel img,body.standard-page .industry-experience-preview img{object-fit:contain;height:auto}
+@media(max-width:760px){:root{--preview-height:20rem}body.software-page .software-preview-pair,body.software-page .matchplant-preview-pair,body.software-page .leafct-unified-previews{max-width:100%}}

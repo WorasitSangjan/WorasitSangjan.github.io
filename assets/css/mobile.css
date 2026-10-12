@@ -1,0 +1,33 @@
+/* Phone-only refinements; desktop styles remain unchanged. */
+@media(max-width:760px){
+ body .wrap{width:calc(100% - 2rem)}
+ body .section-head h1,body .software-intro h1{font-size:clamp(1.9rem,7.5vw,2.5rem);line-height:1.15}
+ .home-page .hero .profile-name{font-size:clamp(1.75rem,8.5vw,2.25rem)}
+ .home-page .hero .eyebrow{font-size:1rem}
+ .home-page .hero .profile-title{font-size:1rem}
+ .home-page .hero .lead{font-size:1.375rem!important;line-height:1.35!important;max-width:none;margin:1.5rem 0 .8rem}
+ .home-page .hero .field-portrait{box-sizing:border-box;width:100%;margin:1.25rem 0 0;padding:.5rem .5rem 0}
+ .home-page .hero .photo-frame{height:clamp(250px,40svh,340px)}
+ .home-page .hero .photo-slide figcaption{font-size:.875rem;min-height:0;padding:.7rem .2rem}
+ .home-page .hero .photo-overlay-controls{opacity:1;transform:none;top:1rem;left:1rem;right:1rem}
+ .home-page .hero .platform-strip{row-gap:1rem;margin:1.5rem 0}
+ .home-page .hero .built-inline{margin-top:1rem}
+ .home-page .hero .tool-names{flex-wrap:wrap;gap:.65rem 1rem}
+ body.research-page .research-chapter .related-papers li.paper-with-thumbnail,
+ body.research-page #proximal .related-papers li.paper-with-thumbnail,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail{grid-template-columns:minmax(0,1fr);gap:.65rem;align-items:start}
+ body.research-page .research-chapter .paper-thumbnail,
+ body.research-page .cross-platform-publications .paper-thumbnail{width:10rem;max-width:100%;margin-left:var(--paper-gutter,1.25rem)}
+ body.research-page .paper-thumbnail img{height:auto;max-height:8rem;width:100%;object-fit:contain;object-position:left top}
+ body.research-page .publication-copy,body.software-page .archive-meta,body .leafct-program-detail>p,body .leafct-use-options dd,body.standard-page .timeline-item p{font-size:1rem;line-height:1.55}
+ body.software-page .leafct-use-options>div{grid-template-columns:1fr;gap:.2rem;align-items:start;padding:.65rem 0}
+ body.software-page .leafct-use-options dt>a{display:inline-block;min-height:32px;line-height:2}
+ body.software-page .leafct-program-row{grid-template-columns:1fr;gap:.5rem}
+ body .scale-nav a,body .software-scale-nav a,body .standard-section-nav a{min-height:44px;box-sizing:border-box;min-width:130px;padding:.65rem .6rem}
+ body .is-compact-section-nav a{min-width:125px}
+ body .research-tools-nav button{min-height:44px}
+ body .contact-profile-links{gap:.4rem 1rem}
+ body .contact-profile-links a{min-height:44px;box-sizing:border-box}
+ body .email-link{overflow-wrap:anywhere}
+ body .highlight-card:hover{transform:none;box-shadow:none}
+}
