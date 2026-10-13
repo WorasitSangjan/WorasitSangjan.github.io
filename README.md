@@ -2,7 +2,7 @@
 
 This is my personal website, where I share my research, open-source tools, and professional background in agricultural sensing, plant phenotyping, and digital agriculture.
 
-**Visit the site:** https://worasit-sangjan.github.io/
+**Visit the site:** https://worasitsangjan.github.io/
 
 ## What you will find
 
