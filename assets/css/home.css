@@ -69,6 +69,5 @@ body.home-page footer{background:#fff;color:#28533b;border-top:1px solid #dce5dc
 /* Desktop: photo card starts level with the first line of text and sits slightly further left. */
 @media(min-width:1100px){.home-page .hero .field-portrait{margin-top:0;margin-right:3rem}}
 /* The lab group photo is shown whole, not cropped. */
-.home-page .group-slide .photo-frame{position:relative;overflow:hidden;background:#123743}
-.home-page .group-slide .photo-frame::before{content:"";position:absolute;inset:-12%;background:var(--bg) center/cover;filter:blur(22px) brightness(.85)}
+.home-page .group-slide .photo-frame{position:relative;overflow:hidden;background:#fff}
 .home-page .group-slide .photo-frame img{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);width:100%;height:auto;max-height:100%;object-fit:contain;display:block}
