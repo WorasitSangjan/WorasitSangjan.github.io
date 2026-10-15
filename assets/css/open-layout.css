@@ -143,3 +143,81 @@ body.research-page section.research-chapter .research-topics-panel::before{conte
 @media(min-width:481px) and (max-width:600px){
  body.research-page .scale-nav>a,body.research-page .scale-nav.is-compact-section-nav>a{flex-direction:row!important;gap:.3rem!important;min-height:44px!important}
 }
+
+/* ViWeed: app icon and a portrait workflow video beside the text. */
+body.research-page section.research-chapter .viweed-paper{grid-template-columns:minmax(0,1fr) 19rem!important}
+body.research-page .viweed-media{display:flex;align-items:flex-start;gap:1rem}
+body.research-page .viweed-media .paper-thumbnail{flex:0 0 7rem;width:7rem}
+body.research-page .viweed-media .paper-thumbnail img{max-height:7rem!important;object-fit:contain}
+body.research-page .viweed-video{margin:0;flex:1 1 auto;min-width:0}
+body.research-page .viweed-video video{display:block;width:100%;max-width:9rem;height:auto;max-height:16rem;background:#123743;object-fit:contain}
+body.research-page .viweed-video figcaption{font-size:.875rem;color:#5c6d63;margin-top:.35rem}
+@media(max-width:700px){
+ body.research-page section.research-chapter .viweed-paper{grid-template-columns:minmax(0,1fr)!important}
+ body.research-page .viweed-video video{max-width:11rem}
+}
+@media(max-width:700px){
+ body.research-page .viweed-media{padding-left:var(--paper-gutter,1.25rem)}
+ body.research-page .viweed-media .paper-thumbnail{margin-left:0!important}
+}
+
+/* ViWeed video: small poster that opens the video in a large window. */
+body.research-page .viweed-media .paper-thumbnail{flex:0 0 5.5rem;width:5.5rem}
+body.research-page .viweed-media .paper-thumbnail img{max-height:5.5rem!important}
+body.research-page .viweed-play{position:relative;display:block;width:5rem;padding:0;border:1px solid #b8cbbb;background:#123743;cursor:pointer;line-height:0}
+body.research-page .viweed-play img{display:block;width:100%;height:auto;max-height:none!important}
+body.research-page .viweed-play-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(18,55,67,.28)}
+body.research-page .viweed-play-icon::before{content:"";width:2rem;height:2rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l9 5-9 5z' fill='%2328533b'/%3E%3C/svg%3E") center/70% no-repeat}
+body.research-page .viweed-play:hover .viweed-play-icon{background:rgba(18,55,67,.1)}
+body.research-page .viweed-play:focus-visible{outline:2px solid #28533b;outline-offset:3px}
+body.research-page .viweed-video video{display:none}
+body.research-page .viweed-video figcaption{max-width:6rem}
+body.research-page .viweed-paper{grid-template-columns:minmax(0,1fr) 13rem!important}
+.video-dialog{padding:0;border:0;background:#000;max-width:96vw;max-height:96vh;width:auto;overflow:hidden}
+.video-dialog::backdrop{background:rgba(0,0,0,.8)}
+.video-dialog video{display:block;max-width:96vw;max-height:92vh;width:auto;height:auto;background:#000}
+.video-dialog-close{position:absolute;top:.5rem;right:.5rem;z-index:2;width:2.5rem;height:2.5rem;border:0;border-radius:50%;background:rgba(255,255,255,.9);color:#123743;font-size:1.6rem;line-height:1;cursor:pointer}
+@media(max-width:700px){body.research-page .viweed-paper{grid-template-columns:minmax(0,1fr)!important}}
+.video-dialog{width:fit-content;height:fit-content;margin:auto;inset:0}
+.video-dialog video{aspect-ratio:720/1642;height:min(92vh,1642px);width:auto;max-width:96vw}
+body.research-page .viweed-play{width:3.5rem}
+body.research-page .viweed-play-icon::before{width:1.5rem;height:1.5rem}
+body.research-page .viweed-video figcaption{max-width:none;font-size:.8125rem;white-space:nowrap}
+body.research-page .viweed-media .paper-thumbnail{flex:0 0 4.5rem;width:4.5rem}
+body.research-page .viweed-media .paper-thumbnail img{max-height:4.5rem!important}
+body.research-page .viweed-paper{grid-template-columns:minmax(0,1fr) 10rem!important}
+@media(max-width:700px){body.research-page .viweed-paper{grid-template-columns:minmax(0,1fr)!important}}
+@media(max-width:700px){body.research-page .viweed-media{padding-left:.2rem}}
+
+/* ViWeed thumbnails fill the same right-hand column as the other papers. */
+body.research-page section.research-chapter .viweed-paper{grid-template-columns:minmax(0,1fr) 11rem!important;gap:2rem!important}
+body.research-page .viweed-media{justify-content:space-between;align-items:flex-start;width:100%}
+body.research-page .viweed-media .paper-thumbnail,body.research-page .viweed-video{flex:0 0 auto}
+@media(max-width:700px){
+ body.research-page section.research-chapter .viweed-paper{grid-template-columns:minmax(0,1fr)!important}
+ body.research-page .viweed-media{justify-content:flex-start;gap:1.5rem;width:auto}
+}
+body.research-page .viweed-media .paper-thumbnail{margin-left:0!important}
+body.research-page .viweed-video{width:3.75rem}
+body.research-page .viweed-play{width:3.5rem;margin-left:auto}
+@media(max-width:700px){body.research-page .viweed-video{width:auto}body.research-page .viweed-play{margin-left:0}}
+body.research-page .research-chapter .paper-with-thumbnail>.viweed-media{margin-left:0!important;display:flex!important;list-style:none!important;padding-left:0}
+@media(max-width:700px){body.research-page .research-chapter .paper-with-thumbnail>.viweed-media{padding-left:.2rem}}
+@media(max-width:700px){body.research-page .research-chapter .paper-with-thumbnail>.viweed-media{padding-left:1.25rem}}
+body.research-page .viweed-media .paper-thumbnail{flex:0 0 6.25rem!important;width:6.25rem!important}
+body.research-page .viweed-media .paper-thumbnail img{max-height:6.25rem!important;width:100%;object-fit:contain}
+
+/* Publications across platforms: thumbnails the same size as the research sections. */
+@media(min-width:701px){
+ body.research-page .cross-platform-publications li.paper-with-thumbnail{grid-template-columns:minmax(0,1fr) 11rem!important;gap:1.5rem!important}
+ body.research-page .cross-platform-publications .paper-thumbnail{width:100%;margin-left:0}
+ body.research-page .cross-platform-publications .paper-thumbnail img{max-height:6.5rem!important;width:100%;object-fit:contain;object-position:left top}
+}
+
+/* Every paper thumbnail uses the same 16:9 box; images that are not 16:9 fit inside it whole. */
+body.research-page section.research-chapter .paper-with-thumbnail:not(.viweed-paper) .paper-thumbnail img,
+body.research-page .cross-platform-publications .paper-with-thumbnail .paper-thumbnail img{width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:16/9;object-fit:contain!important;object-position:center!important;background:#fff}
+
+/* Centre each thumbnail's name under its image. */
+body.research-page .paper-with-thumbnail:not(.viweed-paper) .paper-thumbnail,body.research-page .cross-platform-publications .paper-with-thumbnail .paper-thumbnail{text-align:center}
+body.research-page .paper-with-thumbnail:not(.viweed-paper) .paper-thumbnail span,body.research-page .cross-platform-publications .paper-with-thumbnail .paper-thumbnail span{display:block;text-align:center}
