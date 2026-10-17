@@ -233,3 +233,15 @@ body.software-page .matchplant-play:focus-visible{outline:2px solid #28533b;outl
 .video-dialog-wide video{aspect-ratio:16/9;width:min(96vw,calc(92vh*16/9));height:auto;max-height:92vh}
 @media(max-width:1100px){body.software-page .matchplant-preview-pair{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){body.software-page .matchplant-preview-pair{grid-template-columns:minmax(0,1fr)}body.software-page .matchplant-play{height:auto;align-items:center;min-height:11rem}}
+
+/* ViWeed demo: one thumbnail, the same size as the other papers' images. */
+body.research-page .viweed-demo-thumb{display:block;padding:0;margin:0;border:0;background:none;font:inherit;color:inherit;cursor:pointer;text-align:center;width:100%}
+body.research-page .viweed-thumb-frame{position:relative;display:block;line-height:0}
+body.research-page .viweed-thumb-frame img{display:block;width:100%}
+body.research-page .viweed-thumb-frame .viweed-play-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(18,55,67,.18)}
+body.research-page .viweed-thumb-frame .viweed-play-icon::before{width:2.25rem;height:2.25rem}
+body.research-page .viweed-demo-thumb:hover .viweed-play-icon{background:rgba(18,55,67,.04)}
+body.research-page .viweed-demo-thumb:focus-visible{outline:2px solid #28533b;outline-offset:3px}
+body.research-page .viweed-demo-caption{display:block;margin-top:.35rem;font-size:.875rem;line-height:1.3;color:#28533b;text-decoration:underline;text-underline-offset:.2em;text-align:center}
+body.research-page .paper-with-thumbnail .paper-thumbnail .viweed-thumb-frame .viweed-play-icon{position:absolute;inset:0;display:flex!important;align-items:center;justify-content:center}
+body.research-page .paper-with-thumbnail .paper-thumbnail .viweed-thumb-frame .viweed-play-icon::before{display:block;content:"";width:2.25rem;height:2.25rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l9 5-9 5z' fill='%2328533b'/%3E%3C/svg%3E") center/70% no-repeat;box-shadow:0 2px 8px rgba(0,0,0,.25)}
