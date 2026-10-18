@@ -245,3 +245,86 @@ body.research-page .viweed-demo-thumb:focus-visible{outline:2px solid #28533b;ou
 body.research-page .viweed-demo-caption{display:block;margin-top:.35rem;font-size:.875rem;line-height:1.3;color:#28533b;text-decoration:underline;text-underline-offset:.2em;text-align:center}
 body.research-page .paper-with-thumbnail .paper-thumbnail .viweed-thumb-frame .viweed-play-icon{position:absolute;inset:0;display:flex!important;align-items:center;justify-content:center}
 body.research-page .paper-with-thumbnail .paper-thumbnail .viweed-thumb-frame .viweed-play-icon::before{display:block;content:"";width:2.25rem;height:2.25rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l9 5-9 5z' fill='%2328533b'/%3E%3C/svg%3E") center/70% no-repeat;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+
+/* One repeated row per paper: image on the left, text on the right, a line between rows. */
+@media(min-width:701px){
+ body.research-page section.research-chapter .related-papers.topic-papers li.paper-with-thumbnail,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail{display:grid!important;grid-template-columns:11rem minmax(0,1fr)!important;column-gap:1.5rem!important;align-items:start!important;padding:1.1rem 0!important}
+ body.research-page section.research-chapter .related-papers.topic-papers li.paper-with-thumbnail>.paper-thumbnail,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail>.paper-thumbnail{grid-column:1;grid-row:1;justify-self:start;margin:0!important}
+ body.research-page section.research-chapter .related-papers.topic-papers li.paper-with-thumbnail>.publication-copy,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail>.publication-copy{grid-column:2;grid-row:1;margin-left:0!important}
+ body.research-page section.research-chapter .related-papers.topic-papers li.paper-with-thumbnail>.publication-copy::before,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail>.publication-copy::before{display:none}
+}
+body.research-page section.research-chapter .related-papers.topic-papers li{border-bottom:1px solid #dce4dc;padding:1.1rem 0}
+body.research-page section.research-chapter .related-papers.topic-papers li:last-child{border-bottom:0}
+body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li.research-topic-with-papers{border-bottom:1px solid #dce4dc}
+body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li.research-topic-with-papers:last-child{border-bottom:0}
+
+/* Papers and projects without an image line up with the text of the other rows. */
+@media(min-width:701px){
+ body.research-page section.research-chapter .related-papers.topic-papers li:not(.paper-with-thumbnail),
+ body.research-page .cross-platform-publications li:not(.paper-with-thumbnail){display:grid!important;grid-template-columns:11rem minmax(0,1fr)!important;column-gap:1.5rem!important;padding:1.1rem 0!important}
+ body.research-page section.research-chapter .related-papers.topic-papers li:not(.paper-with-thumbnail)>.publication-copy,
+ body.research-page .cross-platform-publications li:not(.paper-with-thumbnail)>.publication-copy{grid-column:2;margin-left:0!important}
+ body.research-page section.research-chapter .related-papers.topic-papers li:not(.paper-with-thumbnail)>.publication-copy::before,
+ body.research-page .cross-platform-publications li:not(.paper-with-thumbnail)>.publication-copy::before{display:none}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers){padding:1.1rem 0 1.1rem calc(11rem + 1.5rem)!important;border-top:1px solid #dce4dc}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers)::before{display:none}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li.research-topic-with-papers+li:not(.research-topic-with-papers){border-top:0}
+}
+@media(max-width:700px){
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers){border-top:1px solid #dce4dc;padding-top:1.1rem;padding-bottom:1.1rem}
+}
+
+/* Images on the right, text on the left; every row has a bullet and a divider. */
+@media(min-width:701px){
+ body.research-page section.research-chapter .related-papers.topic-papers li.paper-with-thumbnail,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail{grid-template-columns:minmax(0,1fr) 11rem!important}
+ body.research-page section.research-chapter .related-papers.topic-papers li.paper-with-thumbnail>.paper-thumbnail,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail>.paper-thumbnail{grid-column:2;justify-self:end}
+ body.research-page section.research-chapter .related-papers.topic-papers li.paper-with-thumbnail>.publication-copy,
+ body.research-page .cross-platform-publications li.paper-with-thumbnail>.publication-copy{grid-column:1}
+ body.research-page section.research-chapter .related-papers.topic-papers li:not(.paper-with-thumbnail),
+ body.research-page .cross-platform-publications li:not(.paper-with-thumbnail){grid-template-columns:minmax(0,1fr)!important}
+ body.research-page section.research-chapter .related-papers.topic-papers li:not(.paper-with-thumbnail)>.publication-copy,
+ body.research-page .cross-platform-publications li:not(.paper-with-thumbnail)>.publication-copy{grid-column:1}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers){padding:1.1rem 0 1.1rem var(--paper-gutter)!important}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers)::before{display:block;top:1.65rem}
+}
+body.research-page section.research-chapter .related-papers.topic-papers li>.publication-copy,
+body.research-page .cross-platform-publications li>.publication-copy{margin-left:var(--paper-gutter,1.25rem)!important;position:relative}
+body.research-page section.research-chapter .related-papers.topic-papers li>.publication-copy::before,
+body.research-page .cross-platform-publications li>.publication-copy::before{display:block!important;content:"";position:absolute;left:calc(-1 * var(--paper-gutter,1.25rem));top:.58em;width:var(--paper-dot,.3rem);height:var(--paper-dot,.3rem);border-radius:50%;background:#3f7653}
+@media(min-width:701px){
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers){padding-left:0!important}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers)::before{left:calc(-1 * var(--paper-gutter,1.25rem))}
+}
+
+/* One photo per research area, placed where the column would otherwise be empty. */
+body.research-page .area-photo{display:none}
+@media(min-width:1000px){
+ body.research-page section.research-chapter{grid-template-rows:auto auto 1fr!important}
+ body.research-page section.research-chapter .research-topics-panel{grid-row:1/4!important}
+ body.research-page .area-photo{display:block;grid-column:1;grid-row:3;align-self:start;position:sticky;top:10rem;margin:1.5rem 0 0;width:100%}
+ body.research-page .area-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#fff}
+ body.research-page .area-photo-field img{aspect-ratio:3/4;object-position:center 25%}
+ body.research-page .area-photo-satellite img{aspect-ratio:3/4;object-fit:contain}
+ body.research-page .area-photo figcaption{margin-top:.5rem;font-size:.875rem;line-height:1.4;color:#5c6d63}
+ /* X-ray: the left column is the tall one, so its photo goes under the papers on the right. */
+ body.research-page section#xct.research-chapter{grid-template-rows:auto auto!important}
+ body.research-page section#xct .research-topics-panel{grid-row:1!important}
+ body.research-page section#xct .area-photo{grid-column:2;grid-row:2;position:static;margin:0;max-width:30rem;justify-self:start}
+}
+@media(min-width:1000px){
+ body.research-page .area-photo-uav img{aspect-ratio:16/9}
+ body.research-page .area-photo{margin-top:1.25rem}
+}
+@media(min-width:1000px){body.research-page section#xct .area-photo{max-width:20rem}}
+@media(min-width:1000px){
+ body.research-page section#xct.research-chapter{grid-template-rows:auto auto 1fr!important}
+ body.research-page section#xct .research-topics-panel{grid-row:1/4!important}
+ body.research-page section#xct .research-topics-panel .area-photo{position:static;grid-column:auto;grid-row:auto;margin:1.5rem 0 0 1.25rem;max-width:20rem}
+ body.research-page section#xct .area-photo img{aspect-ratio:4/3}
+}
