@@ -14,15 +14,12 @@ body.research-page .detail-section>.wrap>.section-head{border-bottom:0;padding-b
 /* Top tabs: the active area is a solid green pill, the others stay light. */
 body.research-page .scale-nav{background:#fff;border-bottom:1px solid #dce4dc;gap:.5rem;padding:.6rem 0}
 body.research-page .scale-nav>a,body.research-page .scale-nav.is-compact-section-nav>a{flex:1 1 0!important;justify-content:center;background:#f3f6f1;border:0;border-radius:0;color:#28533b;padding:.6rem 1.1rem;transform:none}
-body.research-page .scale-nav>a:hover{background:#e0ebe0}
+body.research-page .scale-nav>a:hover{background:#e8f1e7}
 body.research-page .scale-nav>a[aria-current="location"]{background:#28533b;color:#fff}
 body.research-page .scale-nav>a[aria-current="location"] span,body.research-page .scale-nav>a[aria-current="location"] small{color:#fff}
 body.research-page .scale-nav>a::after{display:none}
 
 /* Topic sub-tabs: underline style. */
-body.research-page .research-tools-nav button{background:transparent;border:0;border-bottom:2px solid transparent;color:#5c6d63;padding:.6rem .1rem}
-body.research-page .research-tools-nav button:hover{background:transparent;color:#28533b}
-body.research-page .research-tools-nav button[aria-selected="true"]{background:transparent;color:#28533b;border-bottom-color:#28533b}
 
 /* Cross-platform block: keep it distinct as a closing band. */
 body.research-page .cross-platform-section{border:0;border-top:3px solid #28533b;margin-top:3rem;padding:2rem 0 0;background:transparent}
@@ -35,7 +32,7 @@ body.research-page .topic-papers>ul>li:not(:first-child) .publication-copy::befo
 /* Same square tab style on every page that has section tabs. */
 body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav){background:#fff;border-bottom:1px solid #dce4dc;gap:.5rem;padding:.6rem 0}
 body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav)>a,body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav).is-compact-section-nav>a{flex:1 1 0!important;justify-content:center;background:#f3f6f1;border:0;border-radius:0;color:#28533b;padding:.6rem 1.1rem;transform:none}
-body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav)>a:hover{background:#e0ebe0}
+body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav)>a:hover{background:#e8f1e7}
 body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav)>a[aria-current="location"]{background:#28533b;color:#fff}
 body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav)>a[aria-current="location"] :is(span,small,strong){color:#fff}
 body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section-nav)>a::after{display:none}
@@ -46,17 +43,12 @@ body:is(.software-page,.standard-page) :is(.software-scale-nav,.standard-section
  body.research-page section.research-chapter{display:grid!important;grid-template-columns:22rem minmax(0,1fr);column-gap:4rem;align-items:start;grid-template-rows:auto 1fr}
  body.research-page section.research-chapter>.research-section-layout{grid-column:1;grid-row:1}
  body.research-page section.research-chapter>.research-tools-tabs{display:contents}
- body.research-page section.research-chapter .research-tools-nav{display:none}
  body.research-page section.research-chapter .research-topics-panel{grid-column:2;grid-row:1/3}
  body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel){grid-column:1;grid-row:2;display:block!important;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #dce4dc}
- body.research-page section.research-chapter .research-tools-panel[hidden]{display:block!important}
 }
 @media(max-width:999px){
- body.research-page section.research-chapter .research-tools-nav{display:none}
- body.research-page section.research-chapter .research-tools-panel[hidden]{display:block!important}
  body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel){margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #dce4dc}
 }
-body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel) h3{font-size:.8125rem;letter-spacing:.1em;text-transform:uppercase;color:#3f7653;margin:0 0 .5rem}
 body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel) ul{margin:0 0 1.1rem;padding-left:1.1rem;font-size:.9375rem;line-height:1.5}
 body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel) .research-method-row{display:block!important;border:0!important;padding:0!important}
 body.research-page section.research-chapter .research-section-layout,body.research-page section.research-chapter .research-section-copy{display:block;width:100%}
@@ -87,16 +79,16 @@ body.standard-page .standard-panel>h2,body.standard-page .standard-panel .panel-
 /* Type standard: titles 16/600, body 15/400, meta and labels 14, intro 16 at 1.5. */
 body :is(.section-head,.software-intro,.contact-intro)>p{line-height:1.5!important}
 body.experience-page .timeline-date{font-weight:600!important}
-body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel) h3{font-size:.8125rem!important;font-weight:600!important;letter-spacing:.1em!important;text-transform:uppercase!important;color:#3f7653!important;margin:0 0 .5rem!important}
+body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel) h3{font-size:.875rem!important;font-weight:600!important;letter-spacing:.1em!important;text-transform:uppercase!important;color:#3f7653!important;margin:0 0 .5rem!important}
 
 /* Same gap under the tab bar and above the footer on every page. */
 body.research-page .platform-grid{margin-top:1.5rem}
 
-/* Phone and tablet: skills first, papers last in each section. */
+/* Phone and tablet: papers first, then the sensors and methods behind them. */
 @media(max-width:999px){
  body.research-page section.research-chapter>.research-tools-tabs{display:flex;flex-direction:column}
- body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel){order:1;margin-top:1rem}
- body.research-page section.research-chapter .research-topics-panel{order:2;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #dce4dc}
+ body.research-page section.research-chapter .research-topics-panel{order:1;margin-top:1rem}
+ body.research-page section.research-chapter .research-tools-panel:not(.research-topics-panel){order:2;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #dce4dc}
 }
 
 /* Phone: thumbnails go under the text, and tabs scroll sideways instead of clipping. */
@@ -117,8 +109,8 @@ body.research-page .platform-grid{margin-top:1.5rem}
 }
 @media(max-width:600px){
  body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav)>a,
- body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav).is-compact-section-nav>a{flex-direction:column!important;gap:.2rem!important;height:auto!important;min-height:52px!important;font-size:.75rem!important}
- body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav)>a :is(strong,.tab-label-short,.tab-label-phone,span:not(.research-category-icon):not(.section-nav-icon)){font-size:.75rem!important;line-height:1.15!important;text-align:center}
+ body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav).is-compact-section-nav>a{flex-direction:column!important;gap:.2rem!important;height:auto!important;min-height:52px!important;font-size:.8125rem!important}
+ body:is(.research-page,.software-page,.standard-page) :is(.scale-nav,.software-scale-nav,.standard-section-nav)>a :is(strong,.tab-label-short,.tab-label-phone,span:not(.research-category-icon):not(.section-nav-icon)){font-size:.8125rem!important;line-height:1.15!important;text-align:center}
 }
 
 /* One divider only under each area description (the tabs wrapper no longer draws its own). */
@@ -276,6 +268,8 @@ body.research-page section.research-chapter .research-topics-panel .research-mod
 }
 @media(max-width:700px){
  body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers){border-top:1px solid #dce4dc;padding-top:1.1rem;padding-bottom:1.1rem}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li.research-topic-with-papers+li:not(.research-topic-with-papers){border-top:0}
+ body.research-page section.research-chapter .research-topics-panel .research-modern-focus>ul>li:not(.research-topic-with-papers)::before{top:1.65rem}
 }
 
 /* Images on the right, text on the left; every row has a bullet and a divider. */
@@ -304,6 +298,15 @@ body.research-page .cross-platform-publications li>.publication-copy::before{dis
 
 /* One photo per research area, placed where the column would otherwise be empty. */
 body.research-page .area-photo{display:none}
+/* Phones and tablets: the photo follows the area's content in a single column. */
+@media(max-width:999px){
+ body.research-page .area-photo{display:block;position:static;margin:1.5rem 0 0;max-width:26rem}
+ body.research-page .area-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#fff}
+ body.research-page .area-photo-field img{aspect-ratio:3/4;object-position:center 25%}
+ body.research-page .area-photo-satellite img{aspect-ratio:3/4;object-fit:contain}
+ body.research-page .area-photo-uav img{aspect-ratio:16/9}
+ body.research-page .area-photo figcaption{margin-top:.5rem;font-size:.875rem;line-height:1.4;color:#5c6d63}
+}
 @media(min-width:1000px){
  body.research-page section.research-chapter{grid-template-rows:auto auto 1fr!important}
  body.research-page section.research-chapter .research-topics-panel{grid-row:1/4!important}
@@ -312,19 +315,40 @@ body.research-page .area-photo{display:none}
  body.research-page .area-photo-field img{aspect-ratio:3/4;object-position:center 25%}
  body.research-page .area-photo-satellite img{aspect-ratio:3/4;object-fit:contain}
  body.research-page .area-photo figcaption{margin-top:.5rem;font-size:.875rem;line-height:1.4;color:#5c6d63}
- /* X-ray: the left column is the tall one, so its photo goes under the papers on the right. */
- body.research-page section#xct.research-chapter{grid-template-rows:auto auto!important}
- body.research-page section#xct .research-topics-panel{grid-row:1!important}
- body.research-page section#xct .area-photo{grid-column:2;grid-row:2;position:static;margin:0;max-width:30rem;justify-self:start}
 }
 @media(min-width:1000px){
  body.research-page .area-photo-uav img{aspect-ratio:16/9}
  body.research-page .area-photo{margin-top:1.25rem}
 }
-@media(min-width:1000px){body.research-page section#xct .area-photo{max-width:20rem}}
-@media(min-width:1000px){
- body.research-page section#xct.research-chapter{grid-template-rows:auto auto 1fr!important}
- body.research-page section#xct .research-topics-panel{grid-row:1/4!important}
- body.research-page section#xct .research-topics-panel .area-photo{position:static;grid-column:auto;grid-row:auto;margin:1.5rem 0 0 1.25rem;max-width:20rem}
- body.research-page section#xct .area-photo img{aspect-ratio:4/3}
+
+/* Open-source tools: three flagship entries above the scale tabs; plain rows, not cards. */
+body.research-page .research-flagship{margin:2rem 0 1.75rem}
+body.research-page .research-flagship h2{margin:0 0 .75rem;font-size:1.25rem;line-height:1.3;color:#28533b}
+body.research-page .research-flagship ul{list-style:none;margin:0;padding:0;border-top:1px solid #dce4dc}
+body.research-page .research-flagship li{border-bottom:1px solid #dce4dc}
+body.research-page .research-flagship a{display:grid;gap:.15rem;padding:.9rem 0;min-height:44px;color:inherit;text-decoration:none}
+body.research-page .research-flagship strong{font-size:1.125rem;line-height:1.3;color:#123743;text-decoration:underline;text-decoration-color:#b8cbbb;text-underline-offset:.2em}
+body.research-page .research-flagship a:hover strong{text-decoration-color:#28533b}
+body.research-page .research-flagship a:focus-visible{outline:2px solid #28533b;outline-offset:2px}
+body.research-page .research-flagship .flagship-scale{font-size:.875rem;font-weight:600;color:#3f7653}
+body.research-page .research-flagship .flagship-line{font-size:.9375rem;line-height:1.45;color:#5c6d63}
+@media(min-width:760px){
+ body.research-page .research-flagship ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:2rem;border-bottom:1px solid #dce4dc}
+ body.research-page .research-flagship li{border-bottom:0}
+}
+
+/* Small type floor: badges and captions no smaller than 13px. */
+body.research-page .research-status{font-size:.8125rem}
+body.research-page .paper-thumbnail span,body.research-page .research-chapter figcaption,body.research-page .viweed-demo-caption{font-size:.875rem!important}
+
+/* Reading measure: running text stops at about 70 characters on wide screens. */
+body.research-page main p:not(.section-head p){max-width:70ch}
+body.research-page .cross-platform-section .methods-band p{max-width:none;padding-right:max(1.5rem,calc(100% - 70ch - 1.5rem))}
+
+/* APS photo sits inside the soil aggregate entry as a small image, caption to its right. */
+body.research-page section#xct li>.area-photo{display:flex;align-items:flex-start;gap:1rem;position:static;grid-column:auto;grid-row:auto;width:100%;max-width:none;margin:.75rem 0 0}
+body.research-page section#xct li>.area-photo img{flex:0 0 13rem;width:13rem;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 55%}
+body.research-page section#xct li>.area-photo figcaption{flex:1 1 0;min-width:0;margin:0;font-size:.875rem;font-weight:400;line-height:1.4;color:#5c6d63}
+@media(max-width:700px){
+ body.research-page section#xct li>.area-photo img{flex-basis:9rem;width:9rem}
 }

@@ -1,0 +1,64 @@
+/* Site standard: one type scale, one palette, one set of component roles for Research, Software, Experience and Contact.
+   Loaded last. Home keeps its own hero styling. Change a value here and every sub-page follows. */
+
+:root{
+ /* palette */
+ --ink:#243c32; --muted:#5c6d63; --link:#28533b; --link-hover:#1f4230; --accent:#3f7653;
+ --line:#dce4dc; --line-strong:#b8cbbb; --soft:#e8f1e7; --tint:#f3f6f1; --cream:#f8f7f1;
+ /* type scale: page / section / entry / body / small / chip */
+ --fs-page:clamp(2.5rem,4.5vw,3.5rem); --fs-section:2rem; --fs-entry:1.25rem;
+ --fs-body:1rem; --fs-small:.875rem; --fs-chip:.8125rem;
+ --lh-body:1.55; --lh-small:1.45; --lh-title:1.3;
+}
+
+/* Entry titles: a research topic, a software tool, a job, a degree. */
+body:not(.home-page) main :is(.research-topic-heading,.software-tool-list>li h3,.timeline-item h3,.education-item b){
+ font-size:var(--fs-entry)!important;font-weight:600!important;line-height:var(--lh-title)!important;color:var(--ink)!important;letter-spacing:0!important;margin-top:0
+}
+/* Sub-entry titles: the Leaf-CT modules. */
+body:not(.home-page) main :is(.ct-text h4,.leafct-program-row h4){font-size:var(--fs-body)!important;font-weight:700!important;line-height:var(--lh-title)!important;color:var(--ink)!important}
+
+/* Subtitles: what a tool is for, where a job was. */
+body:not(.home-page) main :is(.software-tool-purpose,.timeline-item .institution){
+ font-size:var(--fs-body)!important;font-weight:600!important;font-style:normal!important;line-height:var(--lh-body)!important;color:var(--accent)!important
+}
+
+/* Descriptions: running text. */
+body:not(.home-page) main :is(.archive-meta,.timeline-item p:not(.institution),.education-item p,.education-item span,.industry-note,.publication-copy>a,.ct-text p,.ct-run li>span,.leafct-program-detail>p,.leafct-use-options dd){
+ font-size:var(--fs-body)!important;line-height:var(--lh-body)!important
+}
+body:not(.home-page) main :is(.archive-meta,.timeline-item p:not(.institution),.education-item p,.industry-note,.ct-text p,.ct-run li>span){color:var(--muted)!important}
+
+/* Meta and captions. */
+body:not(.home-page) main :is(.publication-meta,figcaption,.paper-thumbnail span,.software-tool-preview figcaption,.ct-text p.ct-note){
+ font-size:var(--fs-small)!important;line-height:var(--lh-small)!important;font-weight:400;color:var(--muted)!important
+}
+/* Dates and small labels. */
+body:not(.home-page) main .timeline-date{font-size:var(--fs-small);font-weight:600;color:var(--accent);line-height:var(--lh-small)}
+
+/* Status chips. */
+body:not(.home-page) main :is(.research-status,.software-status){
+ display:inline-block;padding:.1rem .5rem;border-radius:4px;background:var(--soft);color:var(--link);
+ font-size:var(--fs-chip)!important;font-weight:600;line-height:1.4;vertical-align:middle;white-space:nowrap
+}
+
+/* Links: green, underlined, 600 in lists. */
+body:not(.home-page) main :is(.resource-links a,.contact-profile-links a,.ct-run li>a:not(.ct-primary),.ct-guide,.ct-more>summary,.end-page-links a,.email-link){
+ color:var(--link);font-weight:600;font-size:var(--fs-body)
+}
+
+/* Primary buttons: same size, color and focus ring everywhere. */
+body:not(.home-page) main :is(.primary-button,a.ct-primary,.software-tool-list li:not(#leafct) .resource-links a:first-child){
+ display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 1.25rem;
+ background:var(--link);color:#fff!important;border:0;border-radius:0;font-size:var(--fs-body)!important;font-weight:600;line-height:1.3;text-decoration:none
+}
+body:not(.home-page) main :is(.primary-button,a.ct-primary,.software-tool-list li:not(#leafct) .resource-links a:first-child):hover{background:var(--link-hover);color:#fff!important}
+body:not(.home-page) main :is(.primary-button,a.ct-primary,.software-tool-list li:not(#leafct) .resource-links a:first-child):focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+/* Section titles: same rule, shrink-wrapped to the text, on every page. */
+body:not(.home-page) main :is(.research-modern-heading h2,.software-chapter>h2,.standard-panel>h2){
+ display:block;width:fit-content;max-width:100%;min-width:8rem;font-size:var(--fs-section);font-weight:600;color:var(--ink)
+}
+
+/* Page intros run the full width of the page on every sub-page. */
+body:not(.home-page) main .section-head p{max-width:none!important}

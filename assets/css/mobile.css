@@ -25,7 +25,6 @@
  body.software-page .leafct-program-row{grid-template-columns:1fr;gap:.5rem}
  body .scale-nav a,body .software-scale-nav a,body .standard-section-nav a{min-height:44px;box-sizing:border-box;min-width:130px;padding:.65rem .6rem}
  body .is-compact-section-nav a{min-width:125px}
- body .research-tools-nav button{min-height:44px}
  body .contact-profile-links{gap:.4rem 1rem}
  body .contact-profile-links a{min-height:44px;box-sizing:border-box}
  body .email-link{overflow-wrap:anywhere}
