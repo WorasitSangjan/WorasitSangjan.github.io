@@ -352,3 +352,10 @@ body.research-page section#xct li>.area-photo figcaption{flex:1 1 0;min-width:0;
 @media(max-width:700px){
  body.research-page section#xct li>.area-photo img{flex-basis:9rem;width:9rem}
 }
+body.research-page .viweed-inline-video{margin:.75rem 0 0;max-width:10rem}
+body.research-page .viweed-inline-play{position:relative;display:block;width:100%;padding:0;border:0;background:#123743;cursor:pointer}
+body.research-page .viweed-inline-play img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+body.research-page .viweed-inline-icon{position:absolute;top:50%;left:50%;width:2.5rem;height:2.5rem;margin:-1.25rem 0 0 -1.25rem;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l9 5-9 5z' fill='%2328533b'/%3E%3C/svg%3E") center/70% no-repeat}
+body.research-page .viweed-inline-play:focus-visible{outline:2px solid #28533b;outline-offset:2px}
+body.research-page .viweed-inline-video figcaption{font-size:.875rem;color:#5c6d63;margin-top:.35rem}
+body.research-page #paper-1 .paper-thumbnail img,body.research-page .paper-thumbnail img[src*="fira-2026"]{background:transparent!important}
