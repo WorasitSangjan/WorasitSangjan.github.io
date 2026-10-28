@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://worasitsangjan.github.io/sitemap.xml
