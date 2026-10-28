@@ -7,7 +7,7 @@ This is my personal website, where I share my research, open-source tools, and p
 ## What you will find
 
 - **Research:** my work across X-ray microCT, proximal sensing, IoT, UAV imaging, and satellite sensing, with publications and the sensors and methods I use.
-- **Software:** open-source tools and shared resources I develop for plant phenotyping and digital agriculture.
+- **Open-Source Tools:** open-source tools and shared resources I develop for plant phenotyping and digital agriculture.
 - **Experience:** my career path, research positions, and education.
 - **Contact:** ways to reach me for research collaboration.
 
